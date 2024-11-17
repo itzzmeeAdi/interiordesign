@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designs</title>
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <link rel="stylesheet" href="designs.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <div class="navbar">
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>      
+            <li class="Livingroom.html"><a href="#Livingroom">Livingroom</a></li>        
+            <li class="Bedroom.html"><a href="#Bedroom">Bedroom</a></li>
+            <li class="Dining.html"><a href="#Dining">Dining</a></li>
+            <li class="Kitchen.html"><a href="#Kitchen">Kitchen</a></li>
+            <li class="Bathroom.html"><a href="#Bathroom">Bathroom</a></li>  
+            <li class="contact.html"><a href="#contact">Contact</a></li>  
+        </ul>
+        <img src="image/logo.png" class="logo">
+    </div>
+    
+</head>
+<body>
+   
+    <div class="banner">
+        <video width="100%" height="" autoplay muted><source src="vid.mp4"></video>
+        <button class="Book" onclick="function1()">Book an appointment</button>
+        <div class="entry" id="entry">
+            <input type="text" class="in" placeholder="Full Name" required>
+            <input type="text" class="in" placeholder="Email" required>
+            <input type="text" class="in" placeholder="Number" required>
+            <input type="text" class="in" placeholder="Address" required>
+            <input type="date" class="in" required>
+            <button class="sub" onclick="function2()">Submit</button>
+        </div>
+    </div>
+    
+  
+    <div class="container">
+        <div class="Livingroom" id="Livingroom">
+            <h1>Livingroom</h1>
+            <img src="image/livingroom/1.png">
+            <img src="image/livingroom/2.png">
+            <img src="image/livingroom/3.png">
+            <img src="image/livingroom/4.png">
+            <img src="image/livingroom/5.png">
+            <img src="image/livingroom/6.png">
+           
+            <span></span>
+         </div>
+        <div class="Bedroom" id="Bedroom">
+            <h1>Bedroom</h1>
+            <img src="image/bedrooms/1.png">
+            <img src="image/bedrooms/2.png">
+            <img src="image/bedrooms/3.png">
+            <img src="image/bedrooms/4.png">
+            <img src="image/bedrooms/5.png">
+            <img src="image/bedrooms/6.png">
+           
+            <span></span>
+         </div>
+        
+        <div class="Dining" id="Dining">
+            <h1>Dining</h1>
+            <img src="image/dining/3d-rendering-modern-dining-room-living-room-with-luxury-decor.jpg" alt="">
+            <img src="image/dining/3d-rendering-scandinavian-vintage-modern-kitchen-with-dining-area.jpg" alt="">
+            <img src="image/dining/dining-room-background-zoom-calls.jpg" alt="">
+            <img src="image/dining/interior-shot-luxurious-house-dining-room.jpg" alt="">
+            <img src="image/dining/kitchen-dining-room-modern-apartment.jpg" alt="">
+            <img src="image/dining/minimalist-spacious-interior-design.jpg" alt="">
+            <span></span>
+        </div>
+        <div class="Kitchen" id="Kitchen">
+            <h1>Kitchen</h1>
+            <img src="image/kitchen/1.png">
+            <img src="image/kitchen/2.png">
+            <img src="image/kitchen/3.png">
+            <img src="image/kitchen/4.png">
+            <img src="image/kitchen/5.png">
+            <img src="image/kitchen/6.png">
+            
+        </div>
+        <div class="Bathroom" id="Bathroom">
+            <h1>Bathroom</h1>
+            <img src="image/bathroom/1.png">
+            <img src="image/bathroom/2.png">
+            <img src="image/bathroom/3.png">
+            <img src="image/bathroom/4.png">
+            <img src="image/bathroom/5.png">
+            <img src="image/bathroom/6.png">
+            <span></span>
+        </div>
+        <div class="contact" id="contact">
+            <br>
+            <h2 class="Con" class="text-light mb-0" style="font-family: 'Merriweather', serif;"><i class='bx bxs-contact' ></i></i>Contact:</h2>
+            <br>
+            <h3 class="text-light mb-0" style="font-family: 'Merriweather', serif;"><i class='bx bxs-envelope' ></i>roseteadrian24@gmail.com</h3>
+            <span></span>
+            <h3 class="text-light mb-0" style="font-family: 'Merriweather', serif;" ><i class='bx bxs-phone-call' ></i>0960-477-2087</h3>
+            <br>
+            <small class="text-light">&copy; All rights reserve.</small>
+        </div>
+    </div>
+    
+        
+</body>
+</html>
+<script>
+    function function1(){
+        var x=document.getElementById("entry");
+        if (x.style.display === "none"){
+            x.style.display = "block"; 
+        }
+        else { x.style.display = "none";
+        }
+    }
+    function function2(){
+        var x=document.getElementById("entry");
+        x.style.display = "none"; 
+        alert("Success");
+    }
+
+</script>
